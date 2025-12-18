@@ -7,10 +7,10 @@
     <title>Privacy Policy – PdfToolBox</title>
     <style>
       :root{
-        --bg1:#0f1226; /* deep blue */
-        --bg2:#1b1f3b; /* navy */
-        --primary:#5C7CFF; /* neon blue */
-        --accent:#E1467C; /* neon pink */
+        --bg1:#0f1226;
+        --bg2:#1b1f3b;
+        --primary:#5C7CFF;
+        --accent:#E1467C;
         --card-bg:rgba(255,255,255,0.96);
         --text:#1a1a1a;
       }
@@ -41,25 +41,28 @@
         letter-spacing:.2px;
       }
       .subtitle{ text-align:center; color:#d9d9d9; margin:0 0 28px 0 }
-      .grid{ display:grid; gap:18px }
-      @media(min-width:720px){ .grid{ grid-template-columns:1fr 1fr } }
-      @media(min-width:1000px){ .grid{ grid-template-columns:1fr 1fr } }
       .card{
         background:var(--card-bg);
         border-radius:14px;
         box-shadow:0 10px 30px rgba(0,0,0,0.25);
         backdrop-filter:saturate(160%) blur(4px);
         padding:22px 22px;
+        margin-bottom:18px;
       }
       .card h2{
         margin:0 0 10px 0;
         font-size:1.1rem;
         color:var(--primary);
       }
-      .card p{ margin:0 0 10px 0 }
-      .card ul{ margin:0; padding-left:18px }
+      .card p{ margin:0 0 10px 0; line-height:1.6 }
+      .card ul{ margin:0 0 10px 0; padding-left:20px; line-height:1.6 }
+      .card ul li{ margin-bottom:6px }
+      .subsection{ margin-top:14px }
+      .subsection-title{ font-weight:600; margin-bottom:4px }
       .footer{ text-align:center; color:#cfcfcf; margin-top:24px }
       .badge{ display:inline-block; background:rgba(92,124,255,0.18); color:#fff; border:1px solid rgba(92,124,255,0.5); padding:6px 10px; border-radius:999px; font-size:.85rem; }
+      a{ color:var(--primary); text-decoration:none }
+      a:hover{ text-decoration:underline }
     </style>
   </head>
   <body>
@@ -67,55 +70,86 @@
       <h1 class="title">Privacy Policy – PdfToolBox</h1>
       <p class="subtitle"><span class="badge">Last updated: 18 Dec 2025</span></p>
 
-      <div class="grid">
-        <section class="card">
-          <h2>1. Controller</h2>
-          <p><strong>PdfToolBox</strong><br>
-          Owner: Serhat Gürel<br>
-          Business Address: Französische Straße 12, 10117 Berlin, Germany<br>
-          Email: <a href="mailto:contact@digitalstudiolab.com" style="color:var(--primary)">contact@digitalstudiolab.com</a></p>
-        </section>
+      <section class="card">
+        <h2>1. Name and address of the controller</h2>
+        <p>Controller according to the GDPR and other national data protection laws:</p>
+        <p>
+          <strong>Owner:</strong> Serhat Gürel<br>
+          <strong>E-mail:</strong> <a href="mailto:contact@digitalstudiolab.com">contact@digitalstudiolab.com</a><br>
+          <strong>Business address:</strong> Französische Straße 12, 10117 Berlin, Germany
+        </p>
+      </section>
 
-        <section class="card">
-          <h2>2. Data Processed</h2>
-          <p>We process files (PDFs, images) <strong>locally on your device</strong>. We do <strong>not</strong> upload your content to our servers. We do not collect server‑side usage logs or analytics.</p>
-        </section>
+      <section class="card">
+        <h2>2. Principle: No collection and processing of personal data</h2>
+        <p>The app is designed to work fully offline and does not collect, process, store or transmit personal data.</p>
+        
+        <div class="subsection">
+          <div class="subsection-title">Purpose of processing</div>
+          <p>The app is used exclusively for the local processing of PDF documents and other files provided by the user on their device.</p>
+        </div>
+        
+        <div class="subsection">
+          <div class="subsection-title">Storage</div>
+          <p>All generated or processed data remains exclusively on the user's local device storage. There is no upload to external servers, clouds, or to us.</p>
+        </div>
+        
+        <div class="subsection">
+          <div class="subsection-title">Internet connection</div>
+          <p>The app does not require an active internet connection for its functions. Unintentional or covert data transmission is technically impossible.</p>
+        </div>
+      </section>
 
-        <section class="card">
-          <h2>3. Permissions</h2>
-          <p>We request file access solely to allow you to select, open, and process PDFs. No other sensitive permissions are used.</p>
-        </section>
+      <section class="card">
+        <h2>3. Required permissions of the app</h2>
+        <p>To perform the functions requested by the user, the app requires access to specific resources of the Android device. These permissions are used exclusively for the purpose stated below and serve to fulfill the terms of use and provide the app functionality (Art. 6 para. 1 lit. b GDPR).</p>
+        
+        <div class="subsection">
+          <div class="subsection-title">Required permissions</div>
+          <p>The app requires access to local device storage to read user files and save results locally.</p>
+        </div>
+        
+        <div class="subsection">
+          <div class="subsection-title">Purpose</div>
+          <p>Reading the PDF files selected by the user from the local device storage; Saving the results of PDF processing locally to the device storage.</p>
+        </div>
+        
+        <p>The permission is not used to monitor the user or to secretly transmit data. All processing takes place exclusively locally on the user's device.</p>
+      </section>
 
-        <section class="card">
-          <h2>4. Storage & Retention</h2>
-          <p>On Android, iOS, and Windows, files remain on the device. We do not maintain any persistent server‑side storage. Temporary files are removed by the operating system or when you close the app.</p>
-        </section>
+      <section class="card">
+        <h2>4. Disclosure of data to third parties</h2>
+        <p>As the app does not collect personal data, disclosure to third parties is excluded.</p>
+      </section>
 
-        <section class="card">
-          <h2>5. Sharing with Third Parties</h2>
-          <p>We do not share your data with third parties. The app contains no advertising, tracking pixels, or analytics SDKs.</p>
-        </section>
+      <section class="card">
+        <h2>5. Data subject rights</h2>
+        <p>You have rights under the GDPR. Since we do not store personal data, these rights primarily concern contacting the controller.</p>
+        <ul>
+          <li><strong>Right to access (Art. 15 GDPR):</strong> You have the right to request information about whether and which personal data about you is being processed.</li>
+          <li><strong>Right to rectification (Art. 16 GDPR):</strong> You have the right to request the immediate rectification of inaccurate data.</li>
+          <li><strong>Right to erasure (Art. 17 GDPR):</strong> You have the right to request the deletion of your data stored by us.</li>
+          <li><strong>Right to restriction of processing (Art. 18 GDPR).</strong></li>
+          <li><strong>Right to data portability (Art. 20 GDPR).</strong></li>
+          <li><strong>Right to object (Art. 21 GDPR).</strong></li>
+        </ul>
+        <p><strong>Note:</strong> Since the app does not collect or store data, these rights are in practice mainly directed towards the possibility of contacting the controller (see point 1).</p>
+      </section>
 
-        <section class="card">
-          <h2>6. Payments</h2>
-          <p>No web‑based payments are used. If payment features are introduced in the future, this policy will be updated before they become available.</p>
-        </section>
+      <section class="card">
+        <h2>6. Right to lodge a complaint with a supervisory authority (Art. 77 GDPR)</h2>
+        <p>Without prejudice to any other administrative or judicial remedy, you have the right to lodge a complaint with a supervisory authority.</p>
+      </section>
 
-        <section class="card">
-          <h2>7. Data Security</h2>
-          <p>Processing is performed locally without central servers. We rely on platform security features (sandboxing, HTTPS for external resources where applicable) to protect your data.</p>
-        </section>
+      <section class="card">
+        <h2>7. Changes to this privacy policy</h2>
+        <p>We reserve the right to update this privacy policy when necessary.</p>
+      </section>
 
-        <section class="card">
-          <h2>8. Your Rights</h2>
-          <p>Because we do not store personal data on our servers, common access or deletion requests largely do not apply. For any privacy‑related request, please contact us via the email address above once provided.</p>
-        </section>
-
-        <section class="card">
-          <h2>9. Changes</h2>
-          <p>We may update this policy if features change. Material updates will be reflected in this page and, where appropriate, communicated in‑app.</p>
-        </section>
-      </div>
+      <section class="card">
+        <h2>Notice</h2>
+        <p>This text is based on the requirements of the GDPR (European law) and the BDSG (German law). Since the GDPR is considered one of the strictest data protection laws worldwide, this declaration already provides a high standard of protection in many countries.</p>
+      </section>
 
       <p class="footer">© 2025 PdfToolBox</p>
     </div>
